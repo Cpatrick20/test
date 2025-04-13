@@ -16,13 +16,13 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
   test:
-     runs-on: debian-latest
-     needs: build
-     steps:
-      -name: current dir
-       run: |
-          uptime
-          pwd
-          date
-          cal
-       
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Current directory
+        run: uptime
+      - name: gsysyd
+        run: pwd
+      - name: wehdak
+        run: cat /etc/os-release
+        
